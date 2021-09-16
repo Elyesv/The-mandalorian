@@ -1,0 +1,181 @@
+/*Fichier responsive pour la page de back2 parce qu'on mon autre fichier css fait que le wysiwyg marche pas avec*/
+
+/*Reset du navigateur*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+    scroll-behavior: smooth;
+}
+
+
+
+/*Déclaration des variables css dark mode*/
+
+:root{
+    --color-green: #616640;
+    --color-dark-green: #5F5F45;
+    --color-white: white;
+    --color-rouge: #D8000C;
+    --bg-color-brown: #170F0C; 
+    --bg-color-red: #FFBABA;
+    --bg-color-bleu : #87CEEB;
+}
+
+/*Déclaration des variables css light mode*/
+
+
+
+.dark{
+    --color-green: #616640;
+    --color-dark-green: #5F5F45;
+    --color-white: #0A0A0A;
+    --color-rouge: #D8000C;
+    --bg-color-brown: lightgrey; 
+    --bg-color-red: #FFBABA;
+    --bg-color-bleu : #87CEEB;
+}
+
+body{
+    background-color: var(--bg-color-brown);
+}
+
+.note-editor.note-airframe .note-editing-area .note-editable, .note-editor.note-frame .note-editing-area .note-editable {
+    background-color: var(--bg-color-brown);
+}
+
+/*Page de back pour l'éditeur*/
+
+a{
+    color : var(--color-white);
+}
+
+.backPage{
+    background-color: var(--bg-color-brown);
+}
+
+#backHeader{
+    background-image: url();
+    width: 100%;
+    height: 10vh;
+}
+
+.retourIndex{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    color: var(--color-white);
+    margin-left: 10px;  
+}
+
+/*page blog*/
+
+#blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.titreBlog{
+    font-size: 30px;
+    color: var(--color-white);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formArticle{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titreArticle{
+    height: 50px;
+    width: 100%;
+    min-width: 350px;
+    margin: 20px 0;
+    padding-left: 10px;
+}
+
+#imageUp{
+    color: var(--color-white);
+    margin: 20px 0;
+}
+
+.button{
+    margin: 0 5%;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: var(--bg-color-bleu);
+}
+
+#allArticle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.titreArticle{
+    font-size: 30px;
+    color: var(--color-white);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.article p{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.article{
+    color: var(--color-white);
+    font-size: 20px;
+    margin-top: 20px;
+    width: 350px;
+    border: 1px solid var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.removeArticle{
+    text-decoration: none;
+    border: 1px solid var(--color-white);
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 15px;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 10px;
+}
